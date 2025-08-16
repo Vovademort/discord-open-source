@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: fredboat
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
