@@ -34,6 +34,7 @@ YTDL_OPTS = {
     "geo_bypass": True,
     "nocheckcertificate": True,
     "cachedir": False,
+    "cookiefile": "cookies.txt",  # <--- добавляем cookies
 }
 FFMPEG_OPTS = {
     "before_options": "-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5",
